@@ -7,6 +7,10 @@
 		<script src="canvas_baseline_grid.js"></script>
 */
 
+/*
+Set height of baseline by adjusting the value (currently 15) here:
+for (var y = 0.5; y < setHeight; y += 15)
+*/
 
 $(document).ready(function() {
 	var setHeight=$(document).height(); 
