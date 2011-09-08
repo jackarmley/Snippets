@@ -1,3 +1,13 @@
+/*Add to HTML <head>:
+		<script src="http://www.google.com/jsapi"></script>
+		<script>
+			google.load("jquery", "1.6.2");
+			google.load("jqueryui", "1.8.16");
+		</script>
+		<script src="canvas_baseline_grid.js"></script>
+*/
+
+
 $(document).ready(function() {
 	var setHeight=$(document).height(); 
 	var setWidth=$(document).width(); 
