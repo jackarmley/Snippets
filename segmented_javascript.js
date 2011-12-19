@@ -7,7 +7,7 @@
 ===========*/ 
 
 (function(window,undefined ) {
-	var labs = {
+	var sitescripts = {
 		grid:{
 			setgrid: function(){
 				var setHeight=$(document).height(); 
@@ -50,7 +50,7 @@
 			}
 		}
 	} 
-window.labs = labs;
+window.sitescripts = sitescripts;
 })(window);	  
 	
 
@@ -62,12 +62,12 @@ $(document).ready(function() {
 		//Get page ID
 			var page_id = $("html").attr("id");
 	//Set grid       
-		labs.grid.setgrid()
+		sitescripts.grid.setgrid()
 	//Hide URL bar	
-		addEventListener("load", function() { setTimeout(labs.mobile.hideurlbar, 0); }, false);   
+		addEventListener("load", function() { setTimeout(sitescripts.mobile.hideurlbar, 0); }, false);   
 	//Page-specific functions
 		if(page_id == "pg-home"){
-			labs.pagespecific.home_page()
+			sitescripts.pagespecific.home_page()
 		}
 		 
 });
