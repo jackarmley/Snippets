@@ -37,7 +37,7 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 ======== */
 	/*--[=2a:Typography]--*/	
 		/*-Set webfont stacks for all applicable elements-*/            
-		
+			h1{font-family: 'Medula One', arial, sans-serif;}
 		/*-Set base rules for all typographic elements*/
 			/*Set base font-family/line-height and declare the px size of an em unit*/    
 				body{font:12px/1.5em Arial,helvetica,sans-serif;color:#111;}
@@ -143,11 +143,13 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 		#gl-nav_primary a{display:block;float:left;background:rgba(255,255,255,.7);text-indent:-90000px;width:20px;height:20px;margin:0 0 3px 3px;border-radius:2px;box-shadow:0 0 20px rgba(1,1,1,.6);}
 			#gl-nav_primary a:hover,#gl-nav_primary .current{background:#fff;}
 
-	article{width:3000px;;}
+	article{width:3000px;position:relative;}
+		article h1{position:absolute;top:20px;left:20px;color:#fff;font-size:3em;margin:0;display:none;}
 		article ul{list-style:none;margin:0;padding:0;}		
-		article li{float:left;display:block;margin:0;}		
-		article img{padding:0;margin:0;display:block;opacity: 0.2;-moz-opacity: 0.2;filter:alpha(opacity=2);}
+		article li{float:left;display:block;margin:0;height:500px;overflow:hidden;}		
+		article img{padding:0;margin:0;display:block;opacity: 0.2;-moz-opacity: 0.2;filter:alpha(opacity=2);width:1000px;}
 			.state-active img{opacity: 1;-moz-opacity: 1;filter:alpha(opacity=1);}
+			.state-active h1{display:block;}
 	
 /*========
 [=5:Section-specific layout styles]                                                          

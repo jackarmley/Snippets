@@ -11,7 +11,6 @@ $(document).ready(function() {
 
 	var firstslideshow = $("#opt_1");
 	var firstpos = firstslideshow.position();
-	console.log(firstpos.top);
 
 	if(firstpos.top == 0){
 		$(firstslideshow).addClass("state-active");
