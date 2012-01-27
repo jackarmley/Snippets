@@ -86,11 +86,11 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 	/*--[=2b:Links]--*/
 		:focus{outline:none;}
 		/*-Inline links-*/
-			a{color:#333;text-decoration:none;}
-				a:link{color:#333;text-decoration:none;}
-				a:visited{color:#333;text-decoration:none;}
-				a:hover{color:#333;text-decoration:none;}
-				a:active{color:#333;text-decoration:none;}		
+			a{color:#fff;text-decoration:underline;}
+				a:link{color:#fff;text-decoration:underline;}
+				a:visited{color:#fff;text-decoration:underline;}
+				a:hover{color:#fff;text-decoration:none;}
+				a:active{color:#fff;text-decoration:underline;}		
 		/*-Linked images-*/
 			a img{border:none;}
 	/*--[=2c:Images]--*/
@@ -137,6 +137,9 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 [=4:Global layout styles]
 ======== */
 	html{background:#111;overflow:hidden;min-height:3000px;padding:0 0 600px 0;}
+
+
+	#gl-git_link{position:fixed;bottom:0;left:50%;width:300px;margin:0 0 0 -150px;line-height:2em;color:#fff;background:rgba(1,1,1,.9);font-size:2em;text-align:center;border:1px solid #111;border-bottom:none;z-index:1;}
 	
 	#gl-nav_primary{position:fixed;top:20px;right:20px;z-index:1;}
 		#gl-nav_primary li{display:inline;margin:0;}
