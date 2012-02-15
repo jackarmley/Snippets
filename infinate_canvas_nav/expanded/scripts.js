@@ -39,23 +39,6 @@ $(document).ready(function() {
 	
 		});
 
-	});
-	
-	$("article").each(function(){
-		slideshow_id = $(this).attr("id");
-		var slideposname = "slidepos" + slideshow_id;
-		var slideposname = new Array();
-		console.log(slideposname);
-
-		$("li", this).each(function(){
-			var slide_pos=$(this).position();
-			for (i=0; i<3; i++)
-			{
-				slideposname[0]=slide_pos.left;
-			}
-			console.log(slide_positions);
-		});
-	});
-		
+	});	
 	 
 });
