@@ -1,25 +1,32 @@
 <!doctype HTML>
 <html lang="en-gb">
 	<head>
-		<title>Flash demo</title>	
+		<title>Flash banner preview</title>	
 		<link rel="stylesheet" href="screen.css" />
 		<script src="https://www.google.com/jsapi"></script>
 		<script>
 			google.load("jquery", "1.7.1");
-  			google.load("jqueryui", "1.8.16");
   			google.load("swfobject", "2.2");
 		</script>
 		<script src="scripts.js"></script>
 	</head>
 	<body class="clearfix">
-		<header role="banner">
-			<h1>Banners</h1> 
+		<header role="banner">        
+			<hgroup>
+			<h1>Feb 2012 banners</h1> 
+			<h2>Revision 1</h2>
+			</hgroup> 
+			<select>
+				<option value="http://files.bannersnack.net/site/examples/31.swf" class="250 250">A banner about stuff</option>
+				<option value="http://files.bannersnack.net/site/examples/37.swf" class="336 280">Some more stuff</option>
+				<option value="http://files.bannersnack.net/site/examples/35.swf" class="160 600">Yet another banner with stuff in</option>
+			</select>
 		</header>
-		<ul id="gl-banner_menu">
-			<li><a class="250 250" data-url="http://files.bannersnack.net/site/examples/31.swf">Banner 1</a></li>
-			<li><a class="336 280" data-url="http://files.bannersnack.net/site/examples/37.swf">Banner 2</a></li>
-			<li><a class="160 600" data-url="http://files.bannersnack.net/site/examples/35.swf">Banner 3</a></li>
-		</ul>
- 		<div id="banner"></div>
+		<section role="main">
+			<h1></h1>   
+			<div id="banner_wrapper">
+				<div id="banner"></div>  
+			</div>
+		</section>
 	</body>	
 </html>
